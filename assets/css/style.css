@@ -3,6 +3,10 @@
 /* Navbar Styling */
 .navbar-custom {
     background-color: white !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-custom .navbar-brand,
@@ -22,4 +26,163 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+    background-size: cover;
+    color: #FFEBD4 !important;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-family: 'Handlee', cursive !important;
+    color: #FFEBD4 !important;
+}
+
+.hero-section p {
+    color: #FFEBD4 !important;
+}
+
+.hero-section .btn-light {
+    color: #3b2f2f !important;
+    background-color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+}
+
+/* Services Section Styling */
+.container h2 {
+    color: #3b2f2f;
+    font-family: 'Handlee', cursive !important;
+    font-size: 2rem;
+    text-align: left !important;
+    margin-left: 0 !important;
+    width: 100%;
+    display: block;
+}
+
+.card-title {
+    color: #3b2f2f;
+    font-family: 'Handlee', cursive !important;
+}
+
+.card-text {
+    color: #3b2f2f;
+    font-family: 'Handlee', cursive !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Wellness Tips Section Styling */
+.wellness-tips-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wellness-tips-list li {
+    color: #3b2f2f;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+    font-family: 'Handlee', cursive !important;
+}
+
+.wellness-tips-list li::before {
+    content: "•";
+    color: #3b2f2f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.wellness-tips-list li strong {
+    color: #3b2f2f;
+}
+
+/* Also apply Handlee font to the intro paragraph */
+.container .row .col-lg-8 p {
+    font-family: 'Handlee', cursive !important;
+    color: #3b2f2f !important;
+}
+
+/* Very specific styling for wellness intro paragraph - this should override everything */
+div.container.my-5 div.row.justify-content-center div.col-lg-8 p.wellness-intro {
+    text-align: left !important;
+    font-family: 'Handlee', cursive !important;
+    color: #3b2f2f !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+}
+
+/* Testimonials Section Styling */
+.carousel-item {
+    padding: 50px 0;
+}
+
+.carousel-item blockquote {
+    font-family: 'Handlee', cursive !important;
+    color: #3b2f2f;
+    font-size: 1.1rem;
+}
+
+.carousel-item blockquote .blockquote-footer {
+    color: #3b2f2f;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #3b2f2f;
+}
+
+/* Footer Styling */
+.footer-custom {
+    background-color: #6F4E37;
+    color: #FFEBD4;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-custom p {
+    color: #FFEBD4;
+    margin: 0;
+    font-family: 'Handlee', cursive;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    color: #FFEBD4;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .footer-custom .text-end {
+        text-align: center !important;
+    }
 }
