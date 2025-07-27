@@ -1,3 +1,18 @@
+/* Ensure Contact Us header in card is always centered */
+.card h2 {
+  text-align: center !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Ensure Contact Us header in form is centered */
+.contact-form h2.text-center {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Seven Seas Spa Custom Styles */
 
 /* Navbar Styling */
@@ -61,6 +76,14 @@
     width: 100%;
     display: block;
 }
+
+/* Ensure only the Contact Us header in the card is centered */
+.card h2.text-center {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 
 .card-title {
     color: #3b2f2f;
