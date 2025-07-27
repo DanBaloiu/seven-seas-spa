@@ -1,0 +1,25 @@
+/* Seven Seas Spa Custom Styles */
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: white !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #3b2f2f !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #5a4848 !important;
+}
+
+.navbar-custom .nav-link.active {
+    font-weight: bold !important;
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
